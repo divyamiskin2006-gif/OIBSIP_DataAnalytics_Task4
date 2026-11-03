@@ -1,0 +1,44 @@
+# OIBSIP – Credit Card Fraud Detection
+
+## Objective
+To build a machine learning pipeline that identifies fraudulent credit card transactions using an imbalanced financial transaction dataset.
+
+## Tools & Technologies
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Imbalanced-learn (SMOTE)
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+
+## Dataset
+Credit Card Fraud Detection Dataset containing 284,807 transactions, including 492 fraudulent transactions.
+
+## Steps Performed
+1. Loaded and explored the dataset.
+2. Analysed class imbalance and fraud percentage.
+3. Examined transaction amount distribution.
+4. Performed time-of-day analysis.
+5. Explained why accuracy is misleading for imbalanced datasets.
+6. Split data using stratified train-test splitting.
+7. Applied StandardScaler for feature scaling.
+8. Used SMOTE to balance the training dataset.
+9. Trained Logistic Regression and Random Forest models.
+10. Evaluated models using Precision, Recall, F1-Score, and AUC-ROC.
+11. Plotted ROC curves and confusion matrices.
+12. Analysed feature importance.
+13. Discussed scalability for real-time fraud detection.
+
+## Results
+
+| Model | Precision | Recall | F1-Score | AUC-ROC |
+|---|---:|---:|---:|---:|
+| Logistic Regression | 0.0578 | 0.9184 | 0.1088 | 0.9708 |
+| Random Forest | 0.8710 | 0.8265 | 0.8482 | 0.9685 |
+
+Random Forest achieved the best F1-Score and a better balance between precision and recall.
+
+## Conclusion
+This project demonstrated how SMOTE and machine learning classification algorithms can help detect fraudulent transactions in highly imbalanced datasets.
